@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/md_white_1000"
+    tools:context="com.matrimony.Design.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/reg_title"
+            android:text="Name"/>
+        <TextView
+            android:id="@+id/detail_tv_name"
+            style="@style/detail_value" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_100">
+        <TextView
+            style="@style/reg_title"
+            android:text="Address"/>
+        <TextView
+            android:id="@+id/detail_tv_address"
+            style="@style/detail_value" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/reg_title"
+            android:text="City"/>
+        <TextView
+            android:id="@+id/detail_tv_city"
+            style="@style/detail_value" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_100">
+        <TextView
+            style="@style/reg_title"
+            android:text="Email"/>
+        <TextView
+            android:id="@+id/detail_tv_email"
+            style="@style/detail_value" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/reg_title"
+            android:text="Mobile"/>
+        <TextView
+            android:id="@+id/detail_tv_mobile"
+            style="@style/detail_value" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_100">
+        <TextView
+            style="@style/reg_title"
+            android:text="Gender"/>
+        <TextView
+            android:id="@+id/detail_tv_gender"
+            style="@style/detail_value" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/reg_title"
+            android:text="DOB"/>
+        <TextView
+            android:id="@+id/detail_tv_dob"
+            style="@style/detail_value" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_100">
+        <TextView
+            style="@style/reg_title"
+            android:text="Hobbies"/>
+        <TextView
+            android:id="@+id/detail_tv_hobbies"
+            style="@style/detail_value" />
+    </LinearLayout>
+
+</LinearLayout>

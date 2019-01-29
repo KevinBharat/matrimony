@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.matrimony.Design.RegistrationActivity">
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/reg_et_name"
+            style="@style/reg_value"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="Address" />
+
+        <EditText
+            android:id="@+id/reg_et_address"
+            android:layout_height="100dp"
+            style="@style/reg_value"
+            android:gravity="top"
+            android:inputType="textMultiLine"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="Email" />
+
+        <EditText
+            android:id="@+id/reg_et_email"
+            style="@style/reg_value"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="Mobile" />
+
+        <EditText
+            android:id="@+id/reg_et_mobile"
+            style="@style/reg_value"
+            android:inputType="number"
+            android:maxLength="10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="City" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/reg_sp_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/city"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_blue_grey_200"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="Gender" />
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="3">
+            <RadioButton
+                android:id="@+id/reg_rb_male"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/reg_rb_female"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif"
+                android:text="Female"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="DOB" />
+
+        <EditText
+            android:id="@+id/reg_et_dob"
+            style="@style/reg_value" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/reg_title"
+            android:text="Hobbies" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3">
+            <CheckBox
+                android:id="@+id/reg_ch_reading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif"/>
+            <CheckBox
+                android:id="@+id/reg_ch_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif"/>
+            <CheckBox
+                android:id="@+id/reg_ch_timepass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Pass"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/reg_btn_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/md_white_1000"
+            android:layout_margin="5dp"
+            android:background="@drawable/normal_button_click"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/reg_btn_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Reset"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/md_white_1000"
+            android:layout_margin="5dp"
+            android:background="@drawable/normal_button_click"
+            android:textStyle="bold"/>
+    </LinearLayout>
+       </LinearLayout>
+
+
+</ScrollView>
