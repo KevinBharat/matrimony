@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.matrimony.Design.CountryListActivity">
+    tools:context="my.matrimony.Design.CountryListActivity">
 
     <ListView
         android:id="@+id/country_lst"

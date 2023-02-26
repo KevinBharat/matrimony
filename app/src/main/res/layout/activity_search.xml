@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context="com.matrimony.Design.SearchActivity">
+    tools:context="my.matrimony.Design.SearchActivity">
 
     <Spinner
         android:id="@+id/search_sp_city"
